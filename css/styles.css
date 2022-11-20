@@ -1,0 +1,354 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.header-stripe {
+  background-color: white;
+  height: 0.1rem;
+  width: 100%;
+}
+
+header nav {
+  background-color: salmon;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 12%;
+  margin-bottom: 0px;
+}
+nav span {
+  color: white;
+  font-size: 2rem;
+  opacity: 0.9;
+  font-family: "Gelasio";
+}
+.nav-left {
+  display: flex;
+}
+nav img {
+  width: 1.3rem;
+  margin: 0 0.7rem;
+  opacity: 0.6;
+  filter: invert(100%);
+}
+
+.shop-icon a {
+  position: relative;
+}
+
+.item-count {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  top: -0.5rem;
+  right: 0;
+  text-align: center;
+}
+
+.n-items {
+  color: black;
+  padding: 0.1rem 0.07rem;
+  font-size: 0.5rem;
+}
+
+.hero1 {
+  height: clamp(20vmin, 2vw, 25vmin);
+  padding: 10% 12%;
+  transition: all 1s linear;
+  overflow: hidden;
+  background-image: url("../images/sitting.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero1-textbox {
+  height: 100%;
+  margin-right: 65%;
+  text-align: center;
+  z-index: 1;
+  overflow-wrap: break-word;
+  font-family: "Gelasio";
+}
+
+.hero1-textbox h1 {
+  color: black;
+  font-size: clamp(1rem, 2vw, 3rem);
+  margin: 0 auto;
+}
+
+.hero1-textbox hr {
+  background-image: linear-gradient(
+    to left,
+    black,
+    gray,
+    lightgray,
+    darksalmon
+  );
+  height: 1px;
+  border-width: 0px;
+}
+
+.overlaying-wrapper {
+  display: flex;
+  position: relative;
+}
+.products {
+  background-color: transparent;
+  padding: 1% 12%;
+}
+
+.products nav {
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1.5%;
+}
+.products nav span {
+  color: black;
+  font-size: clamp(0.7rem, 2vw, 2rem);
+  margin-right: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.5rem;
+  transition: text-decoration-color 0.6s;
+}
+
+.products nav span:hover {
+  text-decoration-color: darksalmon;
+}
+
+.images-canvas {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.photo {
+  aspect-ratio: 7/5;
+  height: 50%;
+  width: 33.33%;
+  position: relative;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.photo-overlay {
+  position: absolute;
+  font-family: "Gelasio";
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+  text-align: center;
+  background-color: darksalmon;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-overlay h4 {
+  left: 1rem;
+  top: 0.5rem;
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: 2rem;
+  position: absolute;
+}
+
+.photo-overlay p {
+  left: 1rem;
+  margin: 0 auto;
+  bottom: 0.5rem;
+  font-size: 2.5rem;
+  position: absolute;
+}
+
+.photo:hover > .photo-overlay {
+  opacity: 0.6;
+}
+.add-to-shop-button {
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2.3rem;
+  border: none;
+  padding: 0;
+  user-select: none;
+  transition-duration: 1s;
+}
+
+.add-to-shop-button:after {
+  content: "";
+  display: block;
+  border-radius: 4em;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -0.5rem;
+  transition: all 1s;
+  opacity: 0;
+  box-shadow: 0 0 10px 40px white;
+}
+.add-to-shop-button:active:after {
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  transition: 0s;
+  box-shadow: 0 0 0 0 lightcoral;
+  opacity: 1;
+}
+
+.add-to-shop-button:active {
+  margin-bottom: 0.1rem;
+}
+
+.add-to-shop-button img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .photo {
+    height: 33.33%;
+    width: 50%;
+  }
+
+  .images-canvas {
+    height: auto;
+  }
+
+  header nav {
+    padding: 0 7%;
+  }
+  .hero-1 {
+    padding: 5% 7%;
+  }
+
+  .big-h2 {
+    padding: 5% 7%;
+  }
+
+  .products {
+    padding: 1% 7%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero1-textbox {
+    margin: 0 auto;
+  }
+
+  .hero1 h1,
+  .hero1 p {
+    color: salmon;
+  }
+  .photo {
+    margin: 2% 25%;
+    width: 50%;
+    height: 15%;
+  }
+
+  .images-canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  .photo-overlay {
+    padding: inherit;
+    overflow: hidden;
+  }
+  header nav {
+    padding: 0 2%;
+  }
+  .hero-1 {
+    padding: 1% 2%;
+  }
+
+  .products {
+    padding: 1% 2%;
+  }
+
+  footer {
+    padding: 1% 2%;
+  }
+}
+
+.big-h2 {
+  padding: 4% 12%;
+  text-align: center;
+}
+
+.big-h2 h2 {
+  font-size: clamp(3rem, 4vw, 6rem);
+  font-family: "Gelasio";
+  color: salmon;
+  text-underline-offset: 1rem;
+}
+
+#suits {
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 1s linear;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#ties {
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: opacity 1s linear;
+}
+
+#accesories {
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  transition: opacity 1s linear;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  background-color: salmon;
+  margin: 0 auto;
+  padding: 2% 12%;
+}
+footer nav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+footer nav img {
+  margin-right: 7%;
+  height: 8%;
+  width: 4%;
+}
+
+.footer-stripe {
+  margin-top: 1vw;
+  opacity: 0.2;
+  background-color: white;
+  height: 0.1rem;
+  width: 100%;
+}

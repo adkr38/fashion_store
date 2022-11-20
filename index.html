@@ -1,0 +1,258 @@
+<html>
+  <title>Ossae</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Gelasio"
+  />
+  <body>
+    <header>
+      <div class="header-stripe"></div>
+      <nav>
+        <span>Ossae</span>
+        <div class="nav-left">
+          <img src="images/search-icon.webp" />
+          <div class="shop-icon">
+            <a href="shop.html" target="_blank">
+              <img src="images/shop-icon.png" />
+              <div class="item-count">
+                <span class="n-items">0</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero1">
+      <div class="hero1-textbox">
+        <h1>
+          Tailoring & designing fits with precision, inspired by north-west
+          Africa
+        </h1>
+      </div>
+    </section>
+
+    <section class="products">
+      <nav>
+        <span onclick="displaySuits()">Suits</span>
+        <span onclick="displayTies()">Ties</span>
+        <span onclick="displayAcc()">Accessories</span>
+      </nav>
+
+      <div class="overlaying-wrapper">
+        <div class="images-canvas" id="suits">
+          <div class="photo">
+            <div class="photo-overlay" id="blueQuilt">
+              <h4>Blue quilt</h4>
+              <p>250&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/hands-back.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay">
+              <h4>Business</h4>
+              <p>550&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/best-image.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay">
+              <h4>Sport gray</h4>
+              <p>460&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+
+            <img src="images/phone-user.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay">
+              <h4>Wedding black</h4>
+              <p>1250&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/decorated-suit.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay">
+              <h4>Complete wardrobe</h4>
+              <p>Contact</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/suit-tray.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay">
+              <h4>Blue sport</h4>
+              <p>200&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/smart-watch.jpg" />
+          </div>
+        </div>
+
+        <div class="images-canvas" id="ties">
+          <div class="photo">
+            <div class="photo-overlay" id="tie-blue">
+              <h4>Standard Blue</h4>
+              <p>250&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/tie1.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay" id="tie-striped-set">
+              <h4>Striped Set</h4>
+              <p>550&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/tie2.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay" id="tie-ossae-salmon">
+              <h4>Ossae Salmon</h4>
+              <p>460&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/tie3.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay" id="tie-color-set">
+              <h4>Color Set</h4>
+              <p>1250&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/tie4.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay" id="tie-brown">
+              <h4>Brown</h4>
+              <p>Contact</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/tie5.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay" id="tie-brown">
+              <h4>Highlight Green</h4>
+              <p>200&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/tie6.jpg" />
+          </div>
+        </div>
+
+        <div class="images-canvas" id="accesories">
+          <div class="photo">
+            <div class="photo-overlay" id="acc-wallet">
+              <h4>Leather Wallet</h4>
+              <p>250&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/wallet.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay" id="acc-scarf">
+              <h4>Scarf</h4>
+              <p>550&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/scarf.webp" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay" id="acc-watch">
+              <h4>Sports Watch</h4>
+              <p>460&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/watch.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay" id="acc-glasses1">
+              <h4>Beach Glasses</h4>
+              <p>1250&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/sunglasses1.jpg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay" id="acc-glasses2">
+              <h4>Casual Glasses</h4>
+              <p>Contact</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/sunglasses2.jpeg" />
+          </div>
+          <div class="photo">
+            <div class="photo-overlay">
+              <h4>Leather Bag</h4>
+              <p>200&euro;</p>
+              <button class="add-to-shop-button">
+                <img class="shop-bag-image" src="images/shop-icon.png" />
+              </button>
+            </div>
+            <img src="images/leather_bag.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="big-h2">
+      <h2>Quality isn't negotiable.</h2>
+    </section>
+
+    <footer>
+      <nav class="footer-nav">
+        <img src="images/footer6.png" />
+        <img src="images/footer2.png" />
+        <img src="images/footer3.png" />
+        <img src="images/footer4.png" />
+        <img src="images/footer5.png" />
+        <img src="images/footer1.png" />
+      </nav>
+      <div class="footer-stripe" />
+    </footer>
+    <script src="js/code.js"></script>
+  </body>
+</html>
