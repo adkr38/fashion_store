@@ -16,7 +16,7 @@ header {
 }
 
 header nav {
-  background-color: salmon;
+  background-color: skyblue;
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -41,6 +41,7 @@ nav img {
 
 .shop-icon a {
   position: relative;
+  pointer-events: none;
 }
 
 .item-count {
@@ -49,8 +50,8 @@ nav img {
   border-radius: 50%;
   width: 0.7rem;
   height: 0.7rem;
-  top: -0.5rem;
-  right: 0;
+  top: 20%;
+  transform: translateX(250%);
   text-align: center;
 }
 
@@ -86,13 +87,7 @@ nav img {
 }
 
 .hero1-textbox hr {
-  background-image: linear-gradient(
-    to left,
-    black,
-    gray,
-    lightgray,
-    darksalmon
-  );
+  background-image: linear-gradient(to left, black, gray, lightgray, skyblue);
   height: 1px;
   border-width: 0px;
 }
@@ -122,7 +117,7 @@ nav img {
 }
 
 .products nav span:hover {
-  text-decoration-color: darksalmon;
+  text-decoration-color: skyblue;
 }
 
 .images-canvas {
@@ -149,7 +144,7 @@ nav img {
   opacity: 0;
   transition: opacity 0.7s ease-in-out;
   text-align: center;
-  background-color: darksalmon;
+  background-color: skyblue;
   width: 100%;
   height: 100%;
 }
@@ -256,7 +251,7 @@ nav img {
 
   .hero1 h1,
   .hero1 p {
-    color: salmon;
+    color: skyblue;
   }
   .photo {
     margin: 2% 25%;
@@ -297,7 +292,7 @@ nav img {
 .big-h2 h2 {
   font-size: clamp(3rem, 4vw, 6rem);
   font-family: "Gelasio";
-  color: salmon;
+  color: skyblue;
   text-underline-offset: 1rem;
 }
 
@@ -329,7 +324,7 @@ nav img {
 }
 
 footer {
-  background-color: salmon;
+  background-color: skyblue;
   margin: 0 auto;
   padding: 2% 12%;
 }
@@ -351,4 +346,86 @@ footer nav img {
   background-color: white;
   height: 0.1rem;
   width: 100%;
+}
+
+.shop-hover {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 0%;
+  width: 10vw;
+  top: 80%; /* 140 on translate */
+  right: 7%;
+  border-radius: 2%;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow-y: overlay;
+  list-style-type: none;
+  padding-left: 0;
+  vertical-align: middle;
+  scrollbar-width: none;
+  opacity: 0;
+  text-align: center;
+  font-family: Gelasio;
+  transition: all 1s 1.5s ease-in-out;
+  border-radius: 1%;
+}
+.shop-hover p {
+  color: white;
+  font-size: 3vmin;
+}
+
+.shop-hover.shop-hover::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.shop-icon:hover > .shop-hover {
+  height: 100%;
+  animation-play-state: running;
+  transition: all 1s;
+  transform: translateY(10%);
+  opacity: 1;
+  width: 35vmin;
+  height: 10vmin;
+  padding: none;
+}
+
+.hover-item {
+  padding: 0% 5%;
+  display: flex;
+  position: relative;
+  font-family: "Gelasio";
+  color: white;
+  font-size: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pre-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-item span {
+  margin: auto 0;
+  font-size: 1rem;
+  color: white;
+}
+
+#item-count {
+  position: absolute;
+  top: 50%;
+  right: 1.5vmin;
+  transform: translate(-50%, -50%);
+}
+
+.shop-hover hr {
+  height: 1px;
+  border-width: 0px;
+  margin: 0 auto;
+  opacity: 1;
+  border-color: white;
 }
