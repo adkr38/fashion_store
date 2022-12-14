@@ -1,21 +1,26 @@
 {
-  "items": {
-    "blueQuilt": 250,
-    "business": 550,
-    "sportGray": 460,
-    "fullWardrobe": "Contact",
-    "weddingBlack": 1250,
-    "blueSport": 200,
-    "tie-striped-set": 95,
-    "tie-ossae-salmon": 25,
-    "tie-color-set": 110,
-    "tie-brown": 30,
-    "tie-green": 30,
-    "acc-wallet": 105,
-    "acc-scarf": 82,
-    "acc-watch": 170,
-    "acc-glasses1": 63,
-    "acc-glasses2": 90,
-    "acc-leatherBag": 300
+  "blueQuilt": { "price": 250, "image": "../images/hands-back.jpg" },
+  "business": { "price": 550, "image": "../images/decorated-suit.jpg" },
+  "sportGray": { "price": 460, "image": "../images/phone-user.jpg" },
+  "fullWardrobe": {
+    "price": "Contact",
+    "image": "../images/suit-tray.jpg"
+  },
+  "weddingBlack": { "price": 1250, "image": "../images/wedding.jpg" },
+  "blueSport": { "price": 200, "image": "../images/smart-watch.jpg" },
+  "tie-blue": { "price": 25, "image": "../images/tie1.jpg" },
+  "tie-striped-set": { "price": 95, "image": "../images/tie2.jpg" },
+  "tie-ossae-salmon": { "price": 25, "image": "../images/tie3.jpg" },
+  "tie-color-set": { "price": 110, "image": "../images/tie4.jpg" },
+  "tie-brown": { "price": 30, "image": "../images/tie5.jpg" },
+  "tie-green": { "price": 30, "image": "../images/tie6.jpg" },
+  "acc-wallet": { "price": 105, "image": "../images/wallet.jpg" },
+  "acc-scarf": { "price": 82, "image": "../images/scarf.webp" },
+  "acc-watch": { "price": 170, "image": "../images/watch.jpg" },
+  "acc-glasses1": { "price": 63, "image": "../images/sunglasses1.jpg" },
+  "acc-glasses2": { "price": 90, "image": "../images/sunglasses2.jpeg" },
+  "acc-leatherBag": {
+    "price": 300,
+    "image": "../images/leather_bag.jpg"
   }
 }
